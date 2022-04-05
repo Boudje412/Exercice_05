@@ -6,11 +6,11 @@ export abstract class Mamifere implements Animal{
     _dateNaissance:Date;
 
     //Le constructeur d'un mamifere
-   constructor (nom:string, poids:number, dateNaissance:Date)
+   constructor (nom:string, poids:number, dateNaissance:string)
     {
         this._nom = nom;
         this._poids = poids;
-        this._dateNaissance = dateNaissance;
+        this._dateNaissance = new Date(dateNaissance);
     }
     //Getter de mamifere
     public get nom(){

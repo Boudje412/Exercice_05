@@ -1,8 +1,8 @@
 //le Dauphin dépendant de aquatique et mamifere ont importe ces classes/interfaces
 import {Aquatique} from './aquatique';
-import { Mamifere } from './Mamifere';
+import { Mamifere } from './mamifere';
 //Classe du Dauphin
-class Dauphin extends Mamifere implements Aquatique 
+export class Dauphin extends Mamifere implements Aquatique 
 {
     //Methode du dauphin 
     respirerSousEau():void{

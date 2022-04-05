@@ -1,8 +1,8 @@
 //le chat dépendant de terrestre et mamifere ont importe ces classes/interfaces
-import {Terrestre} from './Terrestre';
-import { Mamifere } from './Mamifere';
+import {Terrestre} from './terrestre';
+import { Mamifere } from './mamifere';
 //classe du chat
-class Chat extends Mamifere implements Terrestre 
+export class Chat extends Mamifere implements Terrestre 
 {
     //Methode du chat
     respirerHorsdeLeau():void{
